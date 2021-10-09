@@ -33,7 +33,7 @@ public class StringBuilderLesson {
         System.out.println("-------------------------");
 
         // StringBuilder создает mutable строку.
-        StringBuilder sb = new StringBuilder("StringBuilder line");
+        StringBuilder sb = new StringBuilder("StringBuilder line: ");
         System.out.println(sb.toString());
         for (int i = 0; i < 5; i++) {
             sb.append(Integer.toString(i));
