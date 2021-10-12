@@ -39,6 +39,30 @@ public class MyLinkedList {
         throw new IllegalArgumentException();
     }
 
+    public void remove(int index) {
+        if (index >= size)
+            throw new IllegalArgumentException();
+
+        if (index == 0) {
+            this.root = root.getNext();
+            size--;
+            return;
+        }
+
+        Node temp = root;
+        int currentIndex = 0;
+
+        while (temp != null) {
+            if (currentIndex == index - 1) {
+                temp.setNext(temp.getNext().getNext());
+                break;
+            }
+            temp = temp.getNext();
+            currentIndex++;
+        }
+        size--;
+    }
+
     @Override
     public String toString() {
         int[] mas = new int[size];
@@ -86,6 +110,8 @@ class Main {
         myLinkedList.add(1);
         myLinkedList.add(2);
         myLinkedList.add(5);
+        myLinkedList.add(1);
+        myLinkedList.remove(1);
 
         System.out.println(myLinkedList.get(2));
 
