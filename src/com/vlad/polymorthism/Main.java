@@ -40,6 +40,8 @@ public class Main {
         Dog mydog = new Dog();
         Animal ani3 = mydog; // up to Animal
 
+        ani3.eat();
+
         Dog mydog2 = (Dog)ani3; // down to Dog
         mydog2.bark();
 
