@@ -67,7 +67,7 @@ public class Wildcards {
         }
     }
 
-    /* super Dog разрешает подавать на вход метода лист содержащий объекты класса Dog и выше.
+    /* super Dog разрешает подавать на вход метода лист содержащий объекты выше класса Dog.
      Тип переменной в условии цикла должен быть самого старшего класса. */
     private static void test4(List<? super Dog> list) {
         for (Object animal : list) {
