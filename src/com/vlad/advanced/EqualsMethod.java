@@ -28,7 +28,6 @@ public class EqualsMethod {
         String str1 = "word";
         String str2 = "word";
 
-        System.out.println("");
         System.out.println("Strings:");
 //        System.out.println("str1 == str2: " + str2 == str1); // false (порядок операций дает о себе знать!)
         System.out.println("str1 == str2: " + (str2 == str1)); // true
